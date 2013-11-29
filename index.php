@@ -143,24 +143,28 @@ session_start();
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          <h2>It's Free For Life!!!</h2>
+          <p>I undertook this project as a result of getting the following quotes from some of the most players in the social media aggregation space.<br />
+	          <ul>
+	          	<li>Company #1: $1,000/month</li>
+	          	<li>Company #2: $10,000/year</li>
+	          	<li>Company #3: $300/month later changed to $200/month when I didn't respond to their emails</li>
+	          </ul>
+	          I was not going to let my University spend that kind of money on a SOCIAL MEDIA AGGREGATOR! So in a few days time I was able to create SocialHubster V1. With more social media integrations, analytics engine, and other features on the way, don't think for a moment that you are having to settle once again for that basic free app. I don't settle and neither should you #YOLO
+          </p>
         </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          <h2>Endless Themes</h2>
+          <p>We are putting together an endless library of themes for your choosing. We are constantly adding University themes, along with pro sports teams themes, and other modern themes that will have your Social Hub looking pretty catchy.</p>
         </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          <h2>Coffee, Redbull, & College</h2>
+          <p>We are college students! We barely sleep, we wear our pj's out, and we have messy rooms. That means we have plenty of time to make suggested changes and additions to make SocialHubster a better product that will prevail over these other social media aggregators. </p>
         </div>
       </div>
       <hr>
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; SocialHubster 2013</p>
       </footer>
     </div>
     <!-- /container -->
