@@ -37,7 +37,7 @@ function createSocialHub() {
 	if(validationError == false) {
 		$.ajax({
 			type: "POST",
-			url: 'http://socialhubster/process_service.php',
+			url: 'http://socialhubster.com/process_service.php',
 			data: {serviceTitle: serviceTitle, serviceName: serviceName, serviceEmail: serviceEmail, servicePassword: servicePassword},
 			success: function(data) {
 				if(data > 0) {

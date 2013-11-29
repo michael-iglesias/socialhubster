@@ -203,7 +203,7 @@ session_start();
 			function processFeedPost(processFeed, type, account) {
 				$.ajax({
 					type: "POST",
-					url: 'http://socialhubster/process_feed.php',
+					url: 'http://socialhubster.com/process_feed.php',
 					data: {type: type, account: account},
 					success: function(data) {
 						if(data == 1) {
