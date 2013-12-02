@@ -34,6 +34,10 @@ session_start();
       .social-icon-add:hover {cursor: pointer;}
       .feed-added {border: 2px solid green; background-color: white;};
     </style>
+	<meta name="description" content="Social Hubster is a social media aggregation tool that easily pull your latest post from popular social media outlets like facebook, twitter, youtube, and more into one aggregated feed. Create a social feed in 60 seconds for free!">
+	<META name="keywords" content="socialhubster, social hub, hub, social media, aggregator, feed, social feed, social media aggregator, social media analytics, analytics, social media platform">
+	<meta name=”robots” content=”index, follow” />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
   </head>
   
   <body>
@@ -75,18 +79,10 @@ session_start();
     <div class="jumbotron">
       <div class="col-md-6">
         <h2>Social Hub Info:</h2>
-        <form>
-          <div class="form-group">
-            <label class="control-label" style="font-size: 15px;">Service Title (e.x. "Florida State University"):</label>
-            <div class="controls">
-              <input type="text" id="service-title" name="service-title" class="form-control short-input" required>
-            </div>
-          </div>
-        </form>
         <div class="form-group">
-          <label class="control-label" style="font-size: 15px;">Service Name (e.x. "florida_state_university"):</label>
+          <label class="control-label" style="font-size: 15px;">Social Hub Name (all lower case no spaces, underscores(_) are allowed):</label>
           <div class="controls">
-            <input type="text" id="service-name" name="service-name" class="form-control short-input" required>
+            <input type="text" id="service-name" name="service-name" class="form-control short-input" placeholder="e.x. - michaels_blog" required>
           </div>
         </div>
         <div class="form-group">
@@ -159,7 +155,7 @@ session_start();
         </div>
         <div class="col-lg-4">
           <h2>Coffee, Redbull, & College</h2>
-          <p>We are college students! We barely sleep, we wear our pj's out, and we have messy rooms. That means we have plenty of time to make suggested changes and additions to make SocialHubster a better product that will prevail over these other social media aggregators. </p>
+          <p>We are college students! We barely sleep, we wear our pj's out, and we have messy rooms. That means we have plenty of time to make suggested changes and additions reuslting in SocialHubster being a better product than these other social media aggregators. #givesyouwings </p>
         </div>
       </div>
       <hr>
@@ -226,7 +222,13 @@ session_start();
     	
     	
     </script>
-    
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0019/9437.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
   </body>
 
 </html>

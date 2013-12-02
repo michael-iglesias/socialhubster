@@ -217,7 +217,7 @@ echo date("F j, Y, g:i a", 1384534260);
 ?><!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>SimplePie: Demo</title>
+<title>Social Hub - Powered by SocialHubster</title>
 
 
 <link rel="stylesheet" href="./assets/css/social_aggregator.css" type="text/css" />

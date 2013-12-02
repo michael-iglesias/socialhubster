@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /idn
+Disallow: /library
+Disallow: /lib
+Disallow: /config.php
+Disallow: /cache
+Disallow: /SimplePie
