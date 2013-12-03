@@ -13,8 +13,11 @@ $(document).ready(function(){
 			data: {serviceName: serviceName},
 			success: function(data) {
 				if(data == 1) {
-	
+					// Display Error - service name already taken
+					$('#service-name').css('border', '1px solid red');
+					$('#service-name-taken').show();
 				} else {
+					$('#service-name').css('border', '1px solid green');
 					
 				}
 			}, 
@@ -58,6 +61,28 @@ function createSocialHub() {
 		validationError = false;
 	}
 	
+	// CHECK SERVICE NAME AVAILABILITY
+	$.ajax({
+		type: "POST",
+		url: 'http://socialhubster.com/check_service_name.php',
+		data: {serviceName: serviceName},
+		success: function(data) {
+			if(data == 1) {
+				validationError = true;
+				$('#service-name-taken').show();
+			} else {
+				validationError = false;
+				$('#service-name-taken').hide();
+			}
+		}, 
+		error: function() {
+			alert('System Error! Please try again.');
+		},
+		complete: function() {
+			console.log('completed')
+		}
+	}); // ***END $.ajax call
+	
 	if(validationError == false) {
 		$.ajax({
 			type: "POST",
@@ -90,5 +115,35 @@ function createSocialHub() {
 			}
 		}); // ***END $.ajax call
 	}
-	
 } // ***END createSocialHub()
+
+
+function processFeedCustomization() {
+	var serviceTitle = $('#service-title').val();
+	var fontColor = $('#font-color-select').val();
+	var titleFontColor = $('#title-font-color').val();
+	var backgroundColor = $('#bg-color').val();
+	var tileBackgroundColor = $('#tile-bg-color').val();
+	var contentBackgroundColor = $('#content-bg-color').val();
+	var dottedBorderColor = $('#dotted-border-bg-color').val();
+	var contentBorderColor = $('#content-border-bg-color').val();
+	
+	$.ajax({
+		type: "POST",
+		url: 'http://socialhubster.com/feed_customization.php',
+		data: {serviceTitle: serviceTitle, fontColor: fontColor, titleFontColor: titleFontColor, backgroundColor: backgroundColor, tileBackgroundColor: tileBackgroundColor, contentBackgroundColor: contentBackgroundColor, dottedBorderColor: dottedBorderColor, contentBorderColor: contentBorderColor},
+		success: function(data) {
+			if(data == 1) {
+				window.location.href = "/manage/index.php";
+			} else {
+				alert('Error! Please Try Submitting Again.');
+			}
+		}, 
+		error: function() {
+			alert('System Error! Please try again.');
+		},
+		complete: function() {
+			console.log('completed')
+		}
+	}); // ***END $.ajax call
+} // ***END processFeedCustomization()

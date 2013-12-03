@@ -33,6 +33,7 @@ session_start();
       .social-icon-add {margin-right: 5px;}
       .social-icon-add:hover {cursor: pointer;}
       .feed-added {border: 2px solid green; background-color: white;};
+      .hide{display: none;}
     </style>
 	<meta name="description" content="Social Hubster is a social media aggregation tool that easily pull your latest post from popular social media outlets like facebook, twitter, youtube, and more into one aggregated feed. Create a social feed in 60 seconds for free!">
 	<META name="keywords" content="socialhubster, social hub, hub, social media, aggregator, feed, social feed, social media aggregator, social media analytics, analytics, social media platform">
@@ -83,6 +84,7 @@ session_start();
           <label class="control-label" style="font-size: 15px;">Social Hub Name (all lower case no spaces, underscores(_) are allowed):</label>
           <div class="controls">
             <input type="text" id="service-name" name="service-name" class="form-control short-input" placeholder="e.x. - michaels_blog" required>
+            <span style="display: none;" class="hide" id="service-name-taken">Name Already Taken! Please choose another.</span>
           </div>
         </div>
         <div class="form-group">
@@ -140,7 +142,7 @@ session_start();
       <div class="row">
         <div class="col-lg-4">
           <h2>It's Free For Life!!!</h2>
-          <p>I undertook this project as a result of getting the following quotes from some of the most players in the social media aggregation space.<br />
+          <p>I undertook this project as a result of getting the following quotes from some of the most notable players in the social media aggregation space.<br />
 	          <ul>
 	          	<li>Company #1: $1,000/month</li>
 	          	<li>Company #2: $10,000/year</li>
@@ -154,8 +156,8 @@ session_start();
           <p>We are putting together an endless library of themes for your choosing. We are constantly adding University themes, along with pro sports teams themes, and other modern themes that will have your Social Hub looking pretty catchy.</p>
         </div>
         <div class="col-lg-4">
-          <h2>Coffee, Redbull, & College</h2>
-          <p>We are college students! We barely sleep, we wear our pj's out, and we have messy rooms. That means we have plenty of time to make suggested changes and additions reuslting in SocialHubster being a better product than these other social media aggregators. #givesyouwings </p>
+          <h2>Analytics</h2>
+          <p>By integrating an analytics engine into our platform, users are able to track user engagement across their social media hubs. Social media statistics along with site statistics (page views, page clicks, etc.) are all registered and displayed within the analytical engine that allows users to filter by different criteria to compute real statistical meanings from this data.</p>
         </div>
       </div>
       <hr>
@@ -196,7 +198,7 @@ session_start();
 				$('#createHub').addClass('btn-disabled');
 				$('#createHub').attr('disabled', 'disabled');				
 				setTimeout(function () {
-					window.location.href = "feed.php?service=" + $('#service-name').val(); //will redirect to your blog page (an ex: blog.html)
+					window.location.href = "setup_feed.php?service=" + $('#service-name').val(); //will redirect to your blog page (an ex: blog.html)
 				}, 2000); //will call the function after 2 secs.
 			} // ***END processFeedCreation
 			
