@@ -534,7 +534,7 @@ function requestFullScreen() {
 				$('#createHub').addClass('btn-disabled');
 				$('#createHub').attr('disabled', 'disabled');				
 				setTimeout(function () {
-					window.location.href = "setup_feed.php?service=" + $('#service-name').val(); //will redirect to your blog page (an ex: blog.html)
+					window.location.href = "manage/index.php"; //will redirect to your blog page (an ex: blog.html)
 				}, 2000); //will call the function after 2 secs.
 			} // ***END processFeedCreation
 			

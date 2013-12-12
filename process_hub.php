@@ -16,6 +16,7 @@ $stmt->bind_param('sss', $serviceName, $serviceEmail, $servicePassword);
 
 if($stmt->execute()) {
 	$_SESSION['service_id'] = $stmt->insert_id;
+	$_SESSION['authorized_user'] = TRUE;
 	echo $stmt->insert_id;
 } else {
 	echo 0;
