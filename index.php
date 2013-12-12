@@ -242,6 +242,15 @@ width: 355px;
         <li><a href="#get-started">Get Started</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
+		<form method="post" action="manage/login.php" class="navbar-form navbar-right">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Email">
+			</div>
+			<div class="form-group">
+			  <input type="password" class="form-control" placeholder="Password">
+			</div>
+			<button class="btn btn-success" type="submit">Sign in</button>
+		</form>
     </div>
    </div>
 </div>
