@@ -8,7 +8,9 @@ $serviceName = $db->real_escape_string($_POST['serviceName']);
 $query = "SELECT * FROM service WHERE service_name='$serviceName'";
 
 if ($result = $db->query($query)) {
-	if($result->num_rows > 0) {
+	$row_count = $result->num_rows;
+	
+	if($row_count > 0) {
 		echo 1;
 	} else {
 		echo 2

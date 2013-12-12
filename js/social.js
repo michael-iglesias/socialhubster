@@ -18,7 +18,7 @@ $(document).ready(function(){
 					$('#service-name-taken').show();
 				} else {
 					$('#service-name').css('border', '1px solid green');
-					
+					$('#service-name-taken').hide();
 				}
 			}, 
 			error: function() {
